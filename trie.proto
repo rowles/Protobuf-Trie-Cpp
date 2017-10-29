@@ -1,0 +1,10 @@
+syntax="proto3";
+
+package test;
+
+message TrieNode {
+    string letter=1;
+    int32 value=2;
+    repeated TrieNode children=3;
+}
+
