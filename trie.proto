@@ -2,9 +2,19 @@ syntax="proto3";
 
 package test;
 
+// represent as Tree
 message TrieNode {
     string letter=1;
     int32 value=2;
     repeated TrieNode children=3;
 }
 
+message Entry {
+    string key=1;
+    int32 value=2;
+}
+
+// represent as KV Dictionary
+message Dictionary {
+    repeated Entry enties=1;
+}
